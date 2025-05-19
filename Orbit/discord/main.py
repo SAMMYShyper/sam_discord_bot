@@ -4,6 +4,7 @@ from dotenv import load_dotenv
 import requests
 import json
 from opennai.opennnai import chatgpt_response
+import random as rd
 
 load_dotenv()
 magickey = os.getenv('SAMSTOKEN')
@@ -23,13 +24,20 @@ async def on_message(mes):
         return
     if mes.content.startswith('!hi'):
         await mes.reply(f'Hey there {mes.author}!')
+    elif mes. content.startswith('!help'):
+        await mes.reply(f"Hey {mes.author}, Here's what I can do:\n'!flip a coin'\n'!quote'\n'!affirm'\nFuture updates will allow me to chat with you")
     elif mes.content.startswith('!quote'):
         quote = get_quote()
         await mes.channel.send(quote)
     elif mes.content.startswith('!affirm'):
         affirm = get_affirm()
         await mes.channel.send(affirm)
-    command, user_messge =None, None
+    elif mes.content.startswith('!flip a coin'):
+        choices = ['Heads', 'Tails']
+        flip = rd.choice(choices)
+        await mes.channel.send(flip)
+
+    command, user_message =None, None
 
     for text in ['!ai']:
         if mes.content.startswith(text):
