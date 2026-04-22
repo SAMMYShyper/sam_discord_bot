@@ -61,4 +61,4 @@ Use `!help` in Discord to see the built-in help menu:
 - Powered by OpenAI, ZenQuotes, and EvilInsult APIs.
 
 ---
-*Created by [SAMMYShyper](https://github.com/SAMMYShyper). For feature suggestions or questions, contact @sammyhi.*
+*Created by [SAMMYShyper](https://github.com/SAMMYShyper). For feature suggestions or questions, contact @sammyshyper*
