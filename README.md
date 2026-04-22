@@ -1,8 +1,8 @@
-# Orbit Discord Bot 🤖
+# Orbit Discord Bot 
 
 A Python-based Discord bot designed for productivity and fun. Inspired by Indently, FreeCodeCamp, and other open-source community resources.
 
-## 🚀 Features
+## Features
 
 ### Fun & Social
 - **!quote**: Get a random inspirational quote (via ZenQuotes API).
@@ -14,7 +14,7 @@ A Python-based Discord bot designed for productivity and fun. Inspired by Indent
 ### AI-Powered
 - **!orbit**: Ask the AI anything! Powered by OpenAI's GPT models (currently configured for `gpt-4.1-nano` style productivity).
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the repository**:
    ```bash
@@ -41,7 +41,7 @@ A Python-based Discord bot designed for productivity and fun. Inspired by Indent
    - `Orbit/discord/main.py`: Contains the Discord client logic and command handlers.
    - `Orbit/opennai/opennnai.py`: Handles interactions with the OpenAI API.
 
-## 🏃 Running the Bot
+## Running the Bot
 
 To start the bot, run the following command from the root directory:
 ```bash
@@ -56,7 +56,7 @@ Use `!help` in Discord to see the built-in help menu:
 - `!orbit <query>` — AI productivity assistant
 - `!insult` — Random insult
 
-## 🤝 Acknowledgments
+## Acknowledgments
 - Inspired by Indently and FreeCodeCamp.
 - Powered by OpenAI, ZenQuotes, and EvilInsult APIs.
 
