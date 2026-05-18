@@ -19,6 +19,6 @@ def chatgpt_response(user_input):
         )
         print(response.usage)
         return response.choices[0].message.content.strip()
-
+# c
     except Exception as e:
         return f"Error: {str(e)}"
