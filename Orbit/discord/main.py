@@ -61,20 +61,6 @@ async def on_message(mes):
         bot_response = chatgpt_response(user_input=user_message)
         await mes.channel.send(f'{bot_response}')
 
-    '''elif mes.content.startswith('!item shop'):
-        item_shop = get_item_shop()
-        await mes.channel.send(item_shop)
-    command, user_message =None, None
-'''
-
-'''
-    for text in ['!ai']:
-        if mes.content.startswith(text):
-            command=mes.content.split(' ')[0]
-            user_message=mes.content.replace(text, '')
-            print(command, user_message)
-
-'''
 #JSON REQUESTS
 def get_insult():
     response_insult = requests.get('https://evilinsult.com/generate_insult.php?lang=en&type=json')
@@ -98,7 +84,7 @@ def get_ai():
     pass
 
 '''def get_item_shop():
-    response_three = requests.get('https://fortnite-api.com/v2/news')
+    response_three = requests.get('https://fortnite-api.com/v2/news') # daily updated fn api in case you may be interested
     json_data_three = json.loads(response_three.text)
     item_shop = json_data_three[['body']
     return item_shop '''
