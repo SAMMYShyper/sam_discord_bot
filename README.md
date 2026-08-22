@@ -48,7 +48,7 @@ To start the bot, run the following command from the root directory:
 python Orbit/run.py
 ```
 
-## 📝 Commands Summary
+## Commands Summary
 Use `!help` in Discord to see the built-in help menu:
 - `!quote` — Random quote
 - `!affirm` — Positive affirmation
